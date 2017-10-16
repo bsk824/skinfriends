@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+.header {height:80px;}
+.header .headerCont {width:100%;}
+.header h1 {top:22px;left:15px;}
+.header h1 img {width:200px;}
+.header #gnb {padding:0 80px 0 20px;}
+.header #gnb li {margin:28px 0 0 20px;}
+.header #gnb li a {font-size:15px;}
+.header .lang {top:25px;right:15px;line-height:0;}
+.header .lang a {width:20px;height:20px;background-size:cover !important;}
+.slide-nav {width:auto;right:15px;left:15px;}
+.contentWrap {width:100%;}
+
+@media all and (min-width:768px) {
+	.header #gnb {display:block!important;}
+}
+@media all and (max-width:767px) {
+	html, body {font-size:62.5%;}
+	body {padding-top:56px;}
+	.header {height:56px;}
+	.header h1 {position:static;padding-top:15px;text-align:center;}
+	.header h1 img {width:156px;margin-left:20px;}
+	.header .btnMenu {display:block;position:absolute;top:15px;left:15px;width:28px;height:28px;font:0/0 a;background:#000;}
+	.header .btnMenu:before,
+	.header .btnMenu:after {content:"";position:absolute;top:6px;left:0;right:0;height:5px;background:#fff;}
+	.header .btnMenu:after {top:17px;}
+	.header #gnb {display:none;position:absolute;top:56px;left:0;width:100%;padding:0;background:#fff;text-align:center;}
+	.header #gnb li {display:block;margin:0;border-top:1px solid #dfdfdf;}
+	.header #gnb li:first-child {margin:0;}
+	.header #gnb li a {display:block;padding:5px 0;font-size:15px;}
+	.header .lang {display:none;}
+	#fp-nav {display:none;}
+
+	.footer {position:static;height:auto;padding:0 0 1rem;font-size:1.2rem;}
+	.footer .name {padding:1.5rem 0 .5rem;font-size:1.4rem;}
+	.footer .contact span {margin:0 .5rem;}
+	.footer .sns {margin:0;font-size:1.4rem;}
+	.footer .sns span {margin:0 .5rem;}
+	.footer .sns a {width:2.5rem;height:2.5rem;background-size:cover!important;}
+
+	.mainContent {position:static;}
+	.mainContent img,
+	.pdSection .swiper-slide a img, .sfSection .swiper-slide a img {display:block;}
+	.slide-nav {position:absolute;top:auto;bottom:0;left:0;right:0;padding:1rem 1.5rem;}
+	.slide-nav:after {content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:#fff;opacity:.5;}
+	.slide-nav button {position:relative;z-index:2;}
+	.slide-nav img {width:1.5rem;}
+
+	.title {font-size:2.5rem;}
+	.contentWrap {width:100%;padding:2rem 1.5rem;box-sizing:border-box;}
+	.moHeader {display:block;padding:2rem 0;background:#fff;text-align:center;}
+	.moHeader h1 {margin:0 0 .5rem;color:#000;font-size:2.5rem;line-height:1;}
+	.moHeader p {color:#b1b1b1;font-size:1.2rem;line-height:1.4;}
+
+	.mediaSection .media {margin:2rem 0 2rem;}
+	.mediaList {margin:0 -.5rem;}
+	.mediaList li {width:50%;}
+	.mediaList li a {padding:.5rem;}
+
+	.snsSection .txt {margin:1rem 0 0;font-size:1.2rem;}
+	.snsSection .btn {margin:1rem 0;}
+	.snsSection .btn button {width:10rem;height:3rem;font-size:1.4rem;}
+
+	.snsSection .list {margin:0 -.5rem;}
+	.snsSection .list li {float:left;width:50%;}
+	.snsSection .list a {margin:.5rem;}
+	.snsSection .list .itemCont {padding:.5rem;font-size:1.2rem;}
+	.snsSection .list li:nth-of-type(7),
+	.snsSection .list li:nth-of-type(8) {display:none;}
+
+	.infoSection .txt {margin:1rem 0 0;font-size:1.2rem;}
+	.infoSection .info01 .txt2 {margin:2rem 0 0;font-size:1.4rem;}
+	.infoSection .info01 .list li {width:45%;padding:1rem  .5rem 0;font-size:1.2rem;}
+	.infoSection .info01 .list li img {margin:0 0 .5rem;}
+	.infoSection .info02 .list {margin-top:0;}
+	.infoSection .info02 .list li {display:block;width:auto;padding:0 0 1rem;font-size:1.2rem;box-sizing:border-box;}
+	.infoSection .info02 .list li img {width:70%;}
+	.infoSection .info02 .list li strong {display:block;margin:0 0 -1rem;font-size:1.6rem;letter-spacing:0;}
+	.infoSection .info02 .list li span {font-size:1.4rem;}
+
+	.infoSection .greeting {margin:1rem 0 0;padding:0;font-size:1.4rem;}
+	.infoSection .greeting .picture {position:static;float:left;width:30%;margin:0 1rem .5rem 0;padding:0;font-size:1.4rem;}
+	.infoSection .greeting .picture img {margin:0 0 1rem;}
+	.infoSection .greeting p {margin:0 0 1rem;}
+	.infoSection .history {margin:0;padding:1rem 0 0;}
+	.infoSection .history .tit {position:static;display:block;width:10rem;margin:0 0 1rem;line-height:3rem;font-size:1.4rem;border-radius:1.5rem;}
+	.infoSection .history li {padding:0 0 0 8rem;font-size:1.2rem;line-height:1.5;}
+	.mapSection .mapWrap {height:20rem;margin:0;}
+	.mapInfo {margin:1rem 0 0;}
+	.mapInfo table {font-size:1.4rem;}
+	.mapInfo th {padding:0;}
+	.mapInfo td {padding:0;color:#818181;}
+}
