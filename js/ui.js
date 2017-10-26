@@ -29,6 +29,13 @@ $(function(){
 		});
 	}
 	$('#gnb').gnb();
+	$('.mediaList a').click(function(){
+		var $this = $(this),
+			url = $this.attr('href');
+
+		$('.media iframe').attr('src',url);
+		return false;
+	});
 });
 var winW = $(window).width(),
 	respChk = "pc";
