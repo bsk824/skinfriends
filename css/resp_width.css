@@ -12,6 +12,74 @@
 .slide-nav {width:auto;right:15px;left:15px;}
 .contentWrap {width:100%;}
 
+.recipeTopVisual {min-width:0;width:100%;height:28rem;background-size:cover;}
+.recipeQna {width:100%;padding:2.5rem 0 3.5rem;}
+.recipeQna .recipeQnaTitle {margin-left:2rem;font-size:2.5rem;}
+.recipeQna .recipeQnaTxt {margin:2rem 0 0 2.5rem;font-size:1.6rem;}
+.recipeQna .recipeQnaTxt br {display:block;}
+.recipeQna .btnType1 {top:6rem;right:1rem;}
+
+.recipeQnaList {margin:2rem 0 0;padding:0;border-radius:0;}
+.recipeQnaList li a {padding:1.8rem 0;font-size:1.6rem;}
+.recipeQnaList .num {width:5rem;}
+.recipeQnaList .subject {padding:0 0 0 2rem;}
+.recipeQnaList .user {width:10rem;}
+.recipeQnaList .date {width:14rem;}
+
+.pagination {margin:2.5rem 0 0;}
+.pagination [class*="pageNav"] {width:2.4rem;height:2.4rem;}
+.pagination .paging {margin:0 2rem;}
+.pagination .paging * {margin:0 .5rem;font-size:1.3rem;}
+
+.recipeKit {height:auto;background-size:auto 30rem;}
+.recipeKitInner {width:100%;padding:3rem;}
+.recipeKitTitle {font-size:2.4rem;}
+.recipeKitTitle span {padding-right:3rem;background-size:2.4rem;}
+.recipeKitTxt1 {margin:2rem 0 .5rem;font-size:1.6rem;}
+.recipeKitTxt2 {font-size:1.4rem;}
+
+.recipeFaq {width:100%;padding:3rem 0 6rem;}
+.recipeFaqTitle {margin:0 0 0 2rem;font-size:2.4rem;}
+.recipeFaqList {margin:2rem 0 0;border-radius:0;}
+.recipeFaqList .q {padding:2rem 2rem 2rem 4rem;font-size:1.7rem;}
+.recipeFaqList .q span {top:2rem;left:2rem;}
+.recipeFaqList .q:after {top:3rem;right:2.5rem;width:2rem;height:1rem;background-size:cover;}
+.recipeFaqList .a {padding:2rem 2rem 2rem 4rem;font-size:1.7rem;}
+.recipeFaqList .a span {top:2rem;left:2rem;font-size:1.7rem;}
+
+.recipeFooter div {width:100%;padding:3.5rem 3rem;}
+.recipeFooter div p {font-size:1.6rem;}
+.recipeFooter div address,
+.recipeFooter div small {font-size:1.4rem;}
+
+.layerPopSection {width:100%;top:0;left:0;margin:0;padding:3.5rem 3rem;border:0;border-radius:0;box-sizing:border-box;}
+.layerTitle {margin:0 0 2.5rem;font-size:3.2rem;}
+.btnLayerClose {top:3.5rem;right:3.5rem;width:2rem;height:2rem;background-size:cover;}
+
+.bbsTable th, .bbsTable td {padding:1rem;font-size:1.}
+.bbsTable .email > span {width:10rem;}
+.bbsTable .email > span.sym {width:1.5rem;}
+.bbsTable .emailInput .chk {margin:.5rem 0 0;}
+.bbsTable textarea {height:20rem;}
+
+.bbsContent {padding:3rem 3rem 18rem;font-size:1.6rem;}
+.bbsReply {padding:2rem 6rem 8rem;font-size:1.6rem;}
+.bbsReply:before {top:1.7rem;left:3.3rem;width:1.4rem;height:1.4rem;}
+
+.agree {margin:2rem 0 0;}
+.agreeTitle {margin:0 0 0 1rem;font-size:1.6rem;}
+.agreeContent {margin:1rem 0 0;padding:1.5rem;}
+.agreeTip {margin:1rem 0 0 1.5rem;}
+
+.status {width:8rem;line-height:3rem;font-size:1.6rem;} 
+
+.btnWrap {margin:2.5rem 0 0;}
+.btnWrap span {margin:0 .5rem;}
+.btnType1 {padding:1rem 3rem;font-size:1.9rem;}
+.btnType2 {width:25rem;line-height:4rem;margin:1rem 0 0;padding-left:2.5rem;font-size:2rem;background-size:1.2rem;}
+.btnType3 {padding:2rem 3rem;font-size:2.4rem;}
+.btnType4 {padding:2rem 3rem;font-size:2.4rem;}
+
 @media all and (min-width:768px) {
 	.header #gnb {display:block!important;}
 }
@@ -41,7 +109,7 @@
 
 	.mainContent {position:static;}
 	.mainContent img,
-	.pdSection .swiper-slide a img, .sfSection .swiper-slide a img {display:block;}
+	.mainSection .swiper-slide a img, .sfSection .swiper-slide a img, .pdSection .swiper-slide a img, .sfSection .swiper-slide a img {display:block;}
 	.slide-nav {position:absolute;top:auto;bottom:0;left:0;right:0;padding:1rem 1.5rem;}
 	.slide-nav:after {content:"";position:absolute;top:0;right:0;bottom:0;left:0;background:#fff;opacity:.5;}
 	.slide-nav button {position:relative;z-index:2;}
@@ -91,4 +159,69 @@
 	.mapInfo table {font-size:1.4rem;}
 	.mapInfo th {padding:0;}
 	.mapInfo td {padding:0;color:#818181;}
+
+	body.recipe {padding:0;}
+
+	.recipeTopVisual {height:18rem;background-position:30% 0;background-size:cover;}
+	.recipeQna .recipeQnaTitle {margin-left:1rem;font-size:1.8rem;}
+	.recipeQna .recipeQnaTxt {margin:1rem 0 0 1rem;font-size:1.2rem;line-height:1.4;}
+	.recipeQna .btnType1 {top:5rem;right:1rem;}
+	
+	.recipeQnaList {margin:1rem 0 0;}
+	.recipeQnaList li a {position:relative;display:block;padding:1.4rem 1rem .5rem;font-size:1.2rem;box-sizing:border-box;}
+	.recipeQnaList .num {display:none;}
+	.recipeQnaList .status {position:absolute;top:1.1rem;left:1rem;}
+	.recipeQnaList .subject {display:block;padding:0 0 0 7rem;}
+	.recipeQnaList .user,
+	.recipeQnaList .date {display:inline-block;width:auto;margin:1rem 0 0;}
+	
+	.recipeKit {background-color:#efecf3;background-size:auto 15rem;background-position:80% 25%}
+	.recipeKitTxt1 {margin-top:11rem;}
+	.recipeKitInner {padding:3rem 2rem;box-sizing:border-box;}
+		
+	.recipeFaqTitle {margin:0 0 0 2rem;font-size:2.4rem;}
+	.recipeFaqList {margin:2rem 0 0;border-radius:0;}
+	.recipeFaqList .q {padding:1rem 5.5rem 1rem 3rem;font-size:1.4rem;}
+	.recipeFaqList .q span {top:2rem;left:1rem;}
+	.recipeFaqList .q:after {top:3rem;right:2.5rem;width:2rem;height:1rem;background-size:cover;}
+	.recipeFaqList .a {padding:2rem 2rem 2rem 3rem;font-size:1.4rem;}
+	.recipeFaqList .a span {top:2rem;left:1rem;font-size:1.4rem;}
+	
+	.recipeFooter div {padding:2rem 1rem;box-sizing:border-box;}
+	.recipeFooter div p {font-size:1.2rem;}
+	.recipeFooter div address,
+	.recipeFooter div small {font-size:1.2rem;}
+	
+	.layerPop {position:absolute;}
+	.layerPopSection {padding:2rem 1rem;box-sizing:border-box;}
+	.layerTitle {margin:0 0 1.5rem;font-size:1.6rem;}
+	.btnLayerClose {top:1.5rem;right:1.5rem;width:2rem;height:2rem;background-size:cover;}
+	
+	.bbsTable colgroup {display:none;}
+	.bbsTable th {width:4rem;}
+	.bbsTable th, .bbsTable td {font-size:1.2rem;}
+	.bbsTable .email {display:table;width:100%;table-layout:fixed;}
+	.bbsTable .email > span {display:table-cell;width:40%;}
+	.bbsTable .email > span.sym {width:1.5rem;padding:0 .2rem;}
+	.bbsTable .email > span select {margin:0 0 0 .2rem;}
+	.bbsTable .emailInput .chk {float:none;margin:.5rem 0 0;}
+	.bbsTable textarea {height:20rem;}
+	
+	.bbsContent {padding:2rem 1rem 5rem;font-size:1.4rem;}
+	.bbsReply {padding:2rem 2rem 4rem 3rem;font-size:1.4rem;}
+	.bbsReply:before {top:1.7rem;left:1rem;width:1rem;height:1rem;}
+	
+	.agreeTitle {margin:0;font-size:1.6rem;}
+	.agreeContent {margin:1rem 0 0;padding:1.5rem;}
+	.agreeTip {margin:1rem 0 0 1.5rem;}
+	.agreeChk {position:static;}
+	
+	.status {width:6rem;line-height:2.5rem;font-size:1.2rem;} 
+	
+	.btnWrap {margin:2.5rem 0 0;}
+	.btnWrap span {margin:0 .5rem;}
+	.btnType1 {padding:1rem;font-size:1.2rem;}
+	.btnType2 {width:25rem;line-height:4rem;margin:1rem 0 0;padding-left:2.5rem;font-size:2rem;background-size:1.2rem;}
+	.btnType3 {padding:1rem 3rem;font-size:1.6rem;}
+	.btnType4 {padding:1rem 3rem;font-size:1.6rem;}
 }

@@ -29,13 +29,6 @@ $(function(){
 		});
 	}
 	$('#gnb').gnb();
-	$('.mediaList a').click(function(){
-		var $this = $(this),
-			url = $this.attr('href');
-
-		$('.media iframe').attr('src',url);
-		return false;
-	});
 });
 var winW = $(window).width(),
 	respChk = "pc";
@@ -48,12 +41,12 @@ function fontSize(w) {
 	}
 }
 fontSize(winW);
-if (winW < 768 && respChk !== "mo" && $('#fullPage').length) {
+if (winW < 768 && respChk !== "mo") {
 	respChk = "mo";
 	$(function(){
 		$.fn.fullpage.destroy('all');
 	});
-} else if (winW > 768 && respChk !== "pc" && $('#fullPage').length) {
+} else if (winW > 768 && respChk !== "pc") {
 	respChk = "pc";
 	$('#fullpage').fullpage({
 		menu: '#gnb',
@@ -65,10 +58,10 @@ if (winW < 768 && respChk !== "mo" && $('#fullPage').length) {
 $(window).resize(function(){
 	var winW = $(window).width();
 	fontSize(winW);
-	if (winW < 768 && respChk !== "mo" && $('#fullPage').length) {
+	if (winW < 768 && respChk !== "mo") {
 		respChk = "mo";
 		$.fn.fullpage.destroy('all');
-	} else if (winW > 768 && respChk !== "pc" && $('#fullPage').length) {
+	} else if (winW > 768 && respChk !== "pc") {
 		respChk = "pc";
 		$('#fullpage').fullpage({
             menu: '#gnb',
@@ -93,17 +86,4 @@ function setCookie(cname, cvalue, exdays) {
 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
 	var expires = "expires="+d.toUTCString();
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function layerOpen(obj) {
-	var layer = $('.'+obj);
-	layer.show();
-}
-function layerClose(obj) {
-	var layer = $('.'+obj);
-	layer.hide();
-}
-function active(obj) {
-	var $this = obj;
-	$this.parent().addClass('active').siblings().removeClass('active');
 }
